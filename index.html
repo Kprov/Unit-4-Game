@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Unit-4-Game</title>
+    <title>Crystals Collector</title>
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
 </head>
 <body>
     <div class="container">
         <header class="jumbotron text-center">
-            <h1 id=mainTitle>Crystal Game!</h1>
+            <h1 id=mainTitle>Crystals Collector!</h1>
         </header>
     </div>
 
@@ -27,6 +27,15 @@
             <div class="col">
                 <img src="assets/images/Crystal.jpg" alt="crystal4" style="width:200px;height:200px" id=crystal4>
             </div>
+    </div>
+
+    <div class="row container scoreRow">
+        <div class="col text-left gameScoreText">
+            <div>Game Score: <span id=gameScore></span></div>
+        </div>
+        <div class="col text-right userScoreText">
+            <div>Your Score: <span id=userScore></span></div>
+        </div>
     </div>
 
     <footer class="footer fixed-bottom text-center">
