@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body>
     <div class="container">
         <header class="jumbotron text-center">
@@ -15,35 +16,39 @@
     </div>
 
     <div class="row container text-center secondRow">
-            <div class="col">
+            <div class="col crystal1">
                 <img src="assets/images/Crystal.jpg" alt="crystal1" style="width:200px;height:200px" id=crystal1>
             </div>
-            <div class="col">
+            <div class="col crystal2">
                 <img src="assets/images/crystal2.jpg" alt="crystal2" style="width:200px;height:200px" id=crystal2>
             </div>                       
-            <div class="col">
+            <div class="col crystal3">
                 <img src="assets/images/crystal3.jpg" alt="crystal3" style="width:200px;height:200px" id=crystal3>
             </div>
-            <div class="col">
+            <div class="col crystal3">
                 <img src="assets/images/crystal4.jpg" alt="crystal4" style="width:200px;height:200px" id=crystal4>
             </div>
     </div>
 
-    <div class="row container scoreRow">
-        <div class="col text-left gameScoreText">
-            <div>Game Score</div>
+    <div class="row container thirdRow">
+        <div class="col text-left">
+            <div>Game Score: <span class="gameScoreText"></span></div>
         </div>
-        <div class="col text-right userScoreText">
-            <div>Your Score</div>
+        <div class="col text-right">
+            <div>Your Score: <span class="userScoreText"></span></div>
         </div>
     </div>
-    <div class="row container thirdRow">
-        <div class="col text-center">
+    <div class="row container fourthRow">
+        <div class="col text-center gameScore">
             <span id=gameScore></span>
         </div>
-        <div class="col text-center">
+        <div class="col text-center userScore">
             <span id=userScore></span>
         </div>
+    </div>
+    <div class="container row text-center">
+        <div id=wins></div>
+        <div id=losses></div>
     </div>
 
     <footer class="footer fixed-bottom text-center">
@@ -51,5 +56,5 @@
     </footer>
 
     <!-- Added link to the jQuery Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
 </body>
