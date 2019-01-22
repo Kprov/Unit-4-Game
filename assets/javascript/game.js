@@ -31,6 +31,18 @@ $(document).ready(function(){
         userTotal += value1;
         console.log(userTotal)
         $(".userScoreText").text(userTotal);
+        if (userTotal === gameScore) {
+            alert("You win!");
+            wins++;
+            $("#wins").text(wins);
+            $("#start").show();
+          }
+      
+          else if (userTotal >= gameScore) {
+            alert("You lose!!");
+            $("#losses").text(losses);
+            losses++;
+          }
     })
     $("#crystal2").on("click", function(){
 
@@ -41,6 +53,19 @@ $(document).ready(function(){
         userTotal += value2;
         console.log(userTotal)
         $(".userScoreText").text(userTotal);
+        if (userTotal === gameScore) {
+            alert("You win!");
+            wins++;
+            $("#wins").text(wins);
+            $("#start").show();
+          }
+      
+          else if (userTotal >= gameScore) {
+            alert("You lose!!");
+            losses++;
+            $("#losses").text(losses);
+            $("#start").show();
+          }
     })
     $("#crystal3").on("click", function(){
 
@@ -51,6 +76,19 @@ $(document).ready(function(){
         userTotal += value3;
         console.log(userTotal)
         $(".userScoreText").text(userTotal);
+        if (userTotal === gameScore) {
+            alert("You win!");
+            wins++;
+            $("#start").show();
+            $("#wins").text(wins);
+          }
+      
+          else if (userTotal >= gameScore) {
+            alert("You lose!!");
+            losses++;
+            $("#losses").text(losses);
+            $("#start").show();
+          }
     })
     $("#crystal4").on("click", function(){
 
@@ -61,7 +99,21 @@ $(document).ready(function(){
         userTotal += value4;
         console.log(userTotal)
         $(".userScoreText").text(userTotal);
+        if (userTotal === gameScore) {
+            alert("You win!");
+            wins++;
+            $("#start").show();
+            $("#wins").text(wins);
+          }
+      
+          else if (userTotal >= gameScore) {
+            alert("You lose!!");
+            losses++;
+            $("#losses").text(losses);
+            $("#start").show();
+          }
     })
+    
 
     })
 
