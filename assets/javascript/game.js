@@ -30,6 +30,7 @@ $(document).ready(function(){
         value1 = parseInt(value1);
         userTotal += value1;
         console.log(userTotal)
+        $(".userScoreText").text(userTotal);
     })
     $("#crystal2").on("click", function(){
 
@@ -39,6 +40,7 @@ $(document).ready(function(){
         value2 = parseInt(value2);
         userTotal += value2;
         console.log(userTotal)
+        $(".userScoreText").text(userTotal);
     })
     $("#crystal3").on("click", function(){
 
@@ -48,6 +50,7 @@ $(document).ready(function(){
         value3 = parseInt(value3);
         userTotal += value3;
         console.log(userTotal)
+        $(".userScoreText").text(userTotal);
     })
     $("#crystal4").on("click", function(){
 
@@ -57,6 +60,7 @@ $(document).ready(function(){
         value4 = parseInt(value4);
         userTotal += value4;
         console.log(userTotal)
+        $(".userScoreText").text(userTotal);
     })
 
     })
