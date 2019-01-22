@@ -1,10 +1,5 @@
 $(document).ready(function(){
-   
-    $("#start").on("click",function(gameStart){
-    
-        
-        
-        
+
     var gameScore = Math.floor(Math.random() * 100+7)
     console.log(gameScore)
     var crystal1 = Math.floor(Math.random() * 10+3);
@@ -14,7 +9,10 @@ $(document).ready(function(){
     var userTotal = 0;
     var wins = 0;
     var losses = 0;
-
+   
+    $("#start").on("click",function(gameStart){
+    
+        
     $(".gameScoreText").text(gameScore);
     $(".userScoreText").text(userTotal);
     $("#wins").text(wins);
@@ -29,28 +27,36 @@ $(document).ready(function(){
     $("#crystal1").on("click", function(){
         console.log("clicked")
         var value1 = $(this).attr("value");
-        console.log(value1)
-        var n = 0;
-        newval = n+value1;
-            $(".userScoreText").text($('<p/>', {text: newval}));     
+        value1 = parseInt(value1);
+        userTotal += value1;
+        console.log(userTotal)
     })
     $("#crystal2").on("click", function(){
 
         console.log("clicked")
         var value2 = $(this).attr("value");
         console.log(value2)
+        value2 = parseInt(value2);
+        userTotal += value2;
+        console.log(userTotal)
     })
     $("#crystal3").on("click", function(){
 
         console.log("clicked")
         var value3 = $(this).attr("value");
         console.log(value3)
+        value3 = parseInt(value3);
+        userTotal += value3;
+        console.log(userTotal)
     })
     $("#crystal4").on("click", function(){
 
         console.log("clicked")
         var value4 = $(this).attr("value");
         console.log(value4)
+        value4 = parseInt(value4);
+        userTotal += value4;
+        console.log(userTotal)
     })
 
     })
