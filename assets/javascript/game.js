@@ -9,7 +9,7 @@ $(document).ready(function(){
     var userTotal = 0;
     var wins = 0;
     var losses = 0;
-   
+    
     $("#start").on("click",function(gameStart){
     
         
@@ -23,7 +23,7 @@ $(document).ready(function(){
     $("#crystal2").attr("value", crystal2);
     $("#crystal3").attr("value", crystal3);
     $("#crystal4").attr("value", crystal4);
-
+    })
     $("#crystal1").on("click", function(){
         console.log("clicked")
         var value1 = $(this).attr("value");
@@ -34,14 +34,19 @@ $(document).ready(function(){
         if (userTotal === gameScore) {
             alert("You win!");
             wins++;
+            userTotal = 0;
+            gameScore = Math.floor(Math.random() * 100+7)
             $("#wins").text(wins);
             $("#start").show();
           }
       
           else if (userTotal >= gameScore) {
             alert("You lose!!");
-            $("#losses").text(losses);
             losses++;
+            userTotal = 0;
+            gameScore = Math.floor(Math.random() * 100+7)
+            $("#losses").text(losses);
+            $("#start").show();
           }
     })
     $("#crystal2").on("click", function(){
@@ -56,6 +61,8 @@ $(document).ready(function(){
         if (userTotal === gameScore) {
             alert("You win!");
             wins++;
+            userTotal = 0;
+            gameScore = Math.floor(Math.random() * 100+7)
             $("#wins").text(wins);
             $("#start").show();
           }
@@ -63,6 +70,8 @@ $(document).ready(function(){
           else if (userTotal >= gameScore) {
             alert("You lose!!");
             losses++;
+            userTotal = 0;
+            gameScore = Math.floor(Math.random() * 100+7)
             $("#losses").text(losses);
             $("#start").show();
           }
@@ -79,6 +88,8 @@ $(document).ready(function(){
         if (userTotal === gameScore) {
             alert("You win!");
             wins++;
+            userTotal = 0;
+            gameScore = Math.floor(Math.random() * 100+7)
             $("#start").show();
             $("#wins").text(wins);
           }
@@ -86,6 +97,8 @@ $(document).ready(function(){
           else if (userTotal >= gameScore) {
             alert("You lose!!");
             losses++;
+            userTotal = 0;
+            gameScore = Math.floor(Math.random() * 100+7)
             $("#losses").text(losses);
             $("#start").show();
           }
@@ -102,6 +115,8 @@ $(document).ready(function(){
         if (userTotal === gameScore) {
             alert("You win!");
             wins++;
+            userTotal = 0;
+            gameScore = Math.floor(Math.random() * 100+7)
             $("#start").show();
             $("#wins").text(wins);
           }
@@ -109,10 +124,12 @@ $(document).ready(function(){
           else if (userTotal >= gameScore) {
             alert("You lose!!");
             losses++;
+            userTotal = 0;
+            gameScore = Math.floor(Math.random() * 100+7)
             $("#losses").text(losses);
             $("#start").show();
           }
-    })
+    
     
 
     })
