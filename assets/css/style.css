@@ -1,12 +1,22 @@
 .secondRow{
     margin-left:150px;
-}
-.gameScoreText{
-    margin-left:350px;
+    margin-top:50px;
 }
 .userScoreText{
     margin-right:50px;
 }
 .scoreRow{
     margin-top:100px;
+}
+#start{
+    margin-left: 625px;
+    background-color:lightblue;
+}
+.gs{
+    margin-left:400px;
+    margin-top:25px;
+}
+.us{
+    margin-top:25px;
+    margin-right:50px;
 }
