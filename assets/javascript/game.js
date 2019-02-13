@@ -10,7 +10,7 @@ $(document).ready(function(){
     var wins = 0;
     var losses = 0;
     
-    $("#start").on("click",function(gameStart){
+    $("#start").on("click",function(){
     
         
     $(".gameScoreText").text(gameScore);
